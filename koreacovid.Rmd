@@ -72,7 +72,10 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-The p-value is 0.0012 is less than 0.05 which means we reject the null hypothesis. Odds are males in Korea are 2.3 times more likely to die than females.   
+In the Chi squared the p-value is 0.0012 is less than 0.05 which means we reject the null hypothesis. In the Fisher Test the p-value is 0.0009 which means odds are males in Korea are 2.3 times more likely to die than females.   
+
 
 ## Conclusions
+
+Among those in Korea males are most likely to die according to the Fisher test. The p-value is 0.0009. In the chi-squared test the p-value is 0.0012 which is lower than 0.05 so we reject the null hypothesis. Dying is not independent of sex. Males in Korea are more likely to die of COVID than females. 
 
