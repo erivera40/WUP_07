@@ -24,7 +24,8 @@ state of a patient must be died or alive - we adjust that as well
   
 # Question 1 - Is dying independent of sex
 
-
+$H_0$: Dying is not independent of sex.   
+$H_A$: Men and women die at different rates, dying is dependent on sex.  
 
 
 Table of patients:
@@ -35,10 +36,12 @@ Table of patients:
 with(kRdata, table(Sex, result))
 
 ```
+Among the females 25 were dead and 1831 were alive. Those among men, 44 were dead and 1411 were alive. According to the table above males have a higher death rate.  
+
 
 ## We create two bar charts - one based on frequency and the other on percent, use ggplot commands to do this
 
-`
+
 
   
 
@@ -48,6 +51,9 @@ with(kRdata, table(Sex, result))
 
   
 ## Numerical results
+
+
+
 
 
 ## Inferential results 
