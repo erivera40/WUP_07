@@ -54,7 +54,13 @@ Among those who died of COVID, the plot shows males are more likely die than fem
   
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
 
+Based on the table above, it looks like twice the amount of males died compared to females.
 
 
 
