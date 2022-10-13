@@ -66,8 +66,13 @@ Based on the table above, it looks like twice the amount of males died compared 
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
-
+The p-value is 0.0012 is less than 0.05 which means we reject the null hypothesis. Odds are males in Korea are 2.3 times more likely to die than females.   
 
 ## Conclusions
 
