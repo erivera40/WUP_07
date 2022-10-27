@@ -24,9 +24,10 @@ state of a patient must be died or alive - we adjust that as well
   
 # Question 1 - Is dying independent of sex
 
-$H_0$: Dying is not independent of sex.   
+$H_0$: Dying is independent of sex.   
 $H_A$: Men and women die at different rates, dying is dependent on sex.  
 
+The response variable is categorical and explanatory variable is categorial so we use the CAT-CAT helper file.  
 
 Table of patients:
 ```{r}
@@ -72,7 +73,8 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-In the Chi squared the p-value is 0.0012 is less than 0.05 which means we reject the null hypothesis. In the Fisher Test the p-value is 0.0009 which means odds are males in Korea are 2.3 times more likely to die than females.   
+In the Chi squared the p-value is 0.0012 is less than 0.05 which means we reject the null hypothesis.  
+In the Fisher Test the p-value is 0.0009 which means odds are males in Korea are 2.3 times more likely to die than females.   
 
 
 ## Conclusions
